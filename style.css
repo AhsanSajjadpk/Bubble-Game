@@ -94,8 +94,14 @@ body {
 h2{
     margin-top: 6px;
 }
+.controls{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+   
+}
 
-#skipbtn{
+.btns{
 
 width: 100px;
 height: 40px;
@@ -103,18 +109,19 @@ font-size: 32px;
 margin-left: 20px;
 border-radius: 15px;
 border: none;
+ margin: 12px;
 }
 
-#skipbtn:hover{
+.btns:hover{
 color: white;
 background: radial-gradient( blue,red,green,skyblue,orange);
-animation: slide 5s linear infinite;
+animation: slide 5s linear ;
 
 }
-@keyframes slide {
+/* @keyframes slide {
 
     to{
         background-position: 50vh;
     }
     
-}
+} */

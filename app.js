@@ -24,8 +24,11 @@ function startTimer() {
     var mytimer = setInterval(function () {
         timer--;
         document.querySelector('#time').textContent = timer
-        if (timer == 0) {
+        if (timer <= 0) {
             clearInterval(mytimer);
+            document.getElementById("startbtn").disabled = false;
+            document.getElementById("time").innerHTML = 60;
+            document.getElementById("scores").innerHTML = 0;
             document.querySelector("#bot").innerHTML = `<h1>Game Over !! <br><br> Your Score : ${score}</h1>`
         }
 
@@ -67,14 +70,26 @@ function flowOfGame() {
 function skipIt() {
     hitValue();
     makeBubble();
+    flowOfGame()
 }
 
+function start() {
 
+     score = 0;
+     timer = 60;
 
-hitValue();
-startTimer();
+    startTimer();
+    hitValue();
+    makeBubble();
+    flowOfGame()
+    document.getElementById("startbtn").disabled = true;
+
+}
+
 makeBubble();
-flowOfGame()
+
+
+
 
 
 
