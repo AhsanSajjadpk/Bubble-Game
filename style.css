@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(118, 146, 158);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    height: 91%;
+    background-color: aqua;
+    box-shadow: 0px 0px 15px #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid blue;
+}
+
+.ptop {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(40, 59, 53);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20%;
+}
+
+.pbtm {
+    width: 100%;
+    height: calc(100% - 100px);
+    background-color: rgb(248, 252, 250);
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px 20px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.bubble {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 28px;
+  
+}
+
+.bubble:hover {
+
+    background-color: rgb(5, 5, 122);
+    color: white;
+    cursor: pointer;
+    /* transform: scale(1.2); */
+    /* transition: 0.5s ease-in-out ; */
+
+}
+
+.elem{
+    display: flex;
+    /* width: 20%; */
+    gap: 15px;
+    /* background-color: red; */
+    
+}
+
+.box{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 15px;
+}
+h2{
+    margin-top: 6px;
+}
+
+#skipbtn{
+
+width: 100px;
+height: 40px;
+font-size: 32px;
+margin-left: 20px;
+border-radius: 15px;
+border: none;
+}
+
+#skipbtn:hover{
+color: white;
+background: radial-gradient( blue,red,green,skyblue,orange);
+animation: slide 5s linear infinite;
+
+}
+@keyframes slide {
+
+    to{
+        background-position: 50vh;
+    }
+    
+}
