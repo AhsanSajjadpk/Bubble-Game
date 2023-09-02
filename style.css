@@ -45,7 +45,7 @@ body {
     padding: 8px 20px;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 .bubble {
@@ -58,7 +58,7 @@ body {
     justify-content: center;
     border-radius: 50%;
     font-size: 28px;
-  
+
 }
 
 .bubble:hover {
@@ -71,15 +71,15 @@ body {
 
 }
 
-.elem{
+.elem {
     display: flex;
     /* width: 20%; */
     gap: 15px;
     /* background-color: red; */
-    
+
 }
 
-.box{
+.box {
     width: 40px;
     height: 40px;
     background-color: white;
@@ -91,37 +91,55 @@ body {
     font-size: 25px;
     border-radius: 15px;
 }
-h2{
+
+h2 {
     margin-top: 6px;
 }
-.controls{
+
+.controls {
     display: flex;
     flex-direction: column;
     padding-left: 30px;
-   
-}
-
-.btns{
-
-width: 100px;
-height: 40px;
-font-size: 32px;
-margin-left: 20px;
-border-radius: 15px;
-border: none;
- margin: 12px;
-}
-
-.btns:hover{
-color: white;
-background: radial-gradient( blue,red,green,skyblue,orange);
-animation: slide 5s linear ;
 
 }
-/* @keyframes slide {
+
+.btns {
+
+    width: 100px;
+    height: 40px;
+    font-size: 32px;
+    margin-left: 20px;
+    border-radius: 15px;
+    border: none;
+    margin: 12px;
+}
+
+.btns:hover {
+    color: white;
+    background:  radial-gradient(blue, red, green, skyblue, orange);
+    animation: slide .1s linear infinite;
+
+}
+
+@keyframes slide {
 
     to{
         background-position: 50vh;
     }
     
-} */
+}
+
+/* ---------------------Media Queries */
+
+@media screen and (max-width: 850px) {
+
+    .ptop {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 15px;
+        /* background-color: red !important; */
+    }
+
+}
+
